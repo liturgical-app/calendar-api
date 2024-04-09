@@ -1,2 +1,2 @@
 # calendar-api
-Liturgical Calendar API
+The Liturgical Calendar API
