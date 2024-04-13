@@ -1,0 +1,36 @@
+# Pythonic
+/workspace.xml
+.DS_Store
+.env
+.flaskenv
+*.pyc
+*.pyo
+env/
+venv/
+.venv/
+env*
+dist/
+build/
+*.egg
+*.egg-info/
+.tox/
+.cache/
+.pytest_cache/
+.idea/
+documentation/_build/
+.vscode
+*.log
+/logs
+
+# Coverage Reports
+htmlcov/
+.coverage
+.coverage.*
+*,cover
+
+# Personal
+todo
+
+# Environment
+*.env
+*.postman_environment.json
