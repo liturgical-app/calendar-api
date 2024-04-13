@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "formatters": {
+    "default": {
+      "format": "[%(asctime)s] [%(levelname)s] - [%(module)s] %(message)s"
+    }
+  },
+  "handlers": {
+    "console": {
+      "class": "logging.StreamHandler",
+      "formatter": "default"
+    },
+    "file": {
+      "class": "logging.FileHandler",
+      "filename": "calendar-api.log",
+      "formatter": "default"
+    }
+  },
+  "root": {
+    "level": "DEBUG",
+    "handlers": ["console"]
+  }
+}

@@ -1,0 +1,13 @@
+Flask~=3.0.0
+Gunicorn~=21.2.0
+aiohttp
+certifi
+gevent
+requests
+jsons
+pyjavaproperties~=0.7
+from_root
+pytest
+coverage-badge
+pytest-cov
+genbadge
