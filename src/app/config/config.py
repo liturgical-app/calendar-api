@@ -3,5 +3,5 @@ import os
 
 class Config(object):
     # General
-    DEBUG = os.environ['DEBUG']
-    PORT = os.environ['PORT']
+    DEBUG = os.getenv('DEBUG', 'True')
+    PORT = os.getenv('PORT', '3000')

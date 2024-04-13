@@ -11,3 +11,4 @@ pytest
 coverage-badge
 pytest-cov
 genbadge
+liturgical-colour # FixMe?
