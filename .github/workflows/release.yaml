@@ -1,0 +1,21 @@
+name: release
+on:
+  workflow_call:
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+      - name: Set-up User 🐵
+        uses: fregante/setup-git-user@v2
+      - name: Bump and Tag 🏷️
+        run: echo "VERSION=$(python src/version/release_snapshot.py)" >> $GITHUB_ENV
+      - name: Release 📦
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ env.VERSION }}
+      - name: Add -SNAPSHOT 📷
+        run: python src/version/bump_version.py
+      - name: Commit -SNAPSHOT 💾
+        uses: stefanzweifel/git-auto-commit-action@v4
