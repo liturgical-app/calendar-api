@@ -8,7 +8,8 @@ jsons
 pyjavaproperties~=0.7
 from_root
 pytest
+flask_cors
 coverage-badge
 pytest-cov
 genbadge
-liturgical-colour # FixMe?
+liturgical-colour == 0.3.0 # FixMe?

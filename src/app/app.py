@@ -1,6 +1,7 @@
 import json
 from logging.config import dictConfig
 from flask import Flask, current_app
+from flask_cors import CORS
 from from_root import from_root
 from src.app.config.config import Config
 from src.app.util.messages.messages import Messages
@@ -10,6 +11,7 @@ from src.app.calendar import calendar
 def create_app():
     # Initialise app
     app = Flask(__name__)
+    CORS(app)
 
     # Initialise config
     config = Config()
