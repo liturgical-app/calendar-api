@@ -8,6 +8,7 @@ jsons
 pyjavaproperties~=0.7
 from_root
 pytest
+flask_cors
 coverage-badge
 pytest-cov
 genbadge
