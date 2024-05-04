@@ -1,7 +1,7 @@
 import logging
 from datetime import date
-from flask import Blueprint, Response, jsonify
-from liturgical_colour.liturgical import liturgical_colour
+from flask import Blueprint, jsonify
+from liturgical_calendar.liturgical import liturgical_calendar
 
 
 # Calendar Logic
@@ -13,7 +13,7 @@ def construct_blueprint(messages):
     def get_liturgical_info(date):
         """ Retrieve liturgical information for given date """
         log.debug(f"[get_liturgical_info] New request for liturgical info on [{date}]")
-        return jsonify(liturgical_colour(date))
+        return jsonify(liturgical_calendar(date))
 
     @calendar.route('/today')
     def get_liturgical_info_today():
