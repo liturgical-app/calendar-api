@@ -12,4 +12,5 @@ flask_cors
 coverage-badge
 pytest-cov
 genbadge
+defusedxml
 liturgical-calendar==0.4.0
