@@ -1,5 +1,5 @@
 Flask~=3.0.0
-Gunicorn~=21.2.0
+Gunicorn~=22.0.0
 aiohttp
 certifi
 gevent
@@ -12,4 +12,5 @@ flask_cors
 coverage-badge
 pytest-cov
 genbadge
-liturgical-colour == 0.3.0 # FixMe?
+defusedxml
+liturgical-calendar==0.4.0

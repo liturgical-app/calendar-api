@@ -1,11 +1,9 @@
-name: test
+name: coverage
 on:
   workflow_call:
 jobs:
-  test:
+  coverage:
     runs-on: ubuntu-latest
-    env:
-      working-directory: ./src/app
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v4
@@ -18,7 +16,7 @@ jobs:
       - name: Test 📋
         run: |
           python3 -m coverage run --source=src/app --omit="*_spec.py" -m pytest src
-          python3 -m coverage xml -o ./src/resources/test/coverage/coverage.xml
-          genbadge coverage -i ./src/resources/test/coverage/coverage.xml -o ./documentation/coverage/coverage.svg
+          python3 -m coverage xml -o ./src/resources/coverage/coverage.xml
+          genbadge coverage -i ./src/resources/coverage/coverage.xml -o ./src/resources/coverage/coverage.svg
       - name: Commit Results 💾
         uses: stefanzweifel/git-auto-commit-action@v4
