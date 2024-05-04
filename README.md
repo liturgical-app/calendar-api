@@ -6,11 +6,13 @@
 <a href="https://github.com/features/actions"><img src="https://img.shields.io/badge/github%20actions-%232a3035.svg?logo=githubactions&logoColor=blue"></a>
 <a href="https://render.com/"><img src="https://img.shields.io/badge/Render-%232a3035.svg?logo=render&logoColor=green"></a>
 
+[calendar.liturgical.app/\<yyyy-mm-dd>](https://calendar.liturgical.app/today)
+
 <img alt="Calendar Example" width=400 src="https://github.com/liturgical-app/calendar-api/assets/34093915/0c7a3250-c68f-4e68-9463-9f40e7a3e9f7">
 
 ## Explanation
-- ℹ️ Get Liturgical information for a given date ([see more](https://pypi.org/project/liturgical-calendar/))
-- 🗓️ [calendar.liturgical.app/\<yyyy-mm-dd>](https://calendar.liturgical.app/today)
+- 🗓 Get Liturgical information for a given date
+- ℹ️ [More info?](https://pypi.org/project/liturgical-calendar/) 
 
 ## Run Locally
 - 🔧 `pip install -r src/app/requirements.txt`
