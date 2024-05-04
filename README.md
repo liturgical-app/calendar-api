@@ -8,7 +8,7 @@
 
 [calendar.liturgical.app/\<yyyy-mm-dd>](https://calendar.liturgical.app/today)
 
-<img alt="Calendar Example" width=400 src="https://github.com/liturgical-app/calendar-api/assets/34093915/0c7a3250-c68f-4e68-9463-9f40e7a3e9f7">
+<img alt="Calendar Example" width=480 src="https://github.com/liturgical-app/calendar-api/assets/34093915/0c7a3250-c68f-4e68-9463-9f40e7a3e9f7">
 
 ## Explanation
 - 🗓 Get Liturgical information for a given date
