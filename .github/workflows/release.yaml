@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Set-up User 🐵
         uses: fregante/setup-git-user@v2
       - name: Bump and Tag 🏷️
