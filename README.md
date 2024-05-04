@@ -6,7 +6,7 @@
 <a href="https://github.com/features/actions"><img src="https://img.shields.io/badge/github%20actions-%232a3035.svg?logo=githubactions&logoColor=blue"></a>
 <a href="https://render.com/"><img src="https://img.shields.io/badge/Render-%232a3035.svg?logo=render&logoColor=green"></a>
 
-<img alt="Calendar Example" width=640 src="https://github.com/liturgical-app/calendar-api/assets/34093915/2044cadb-d18c-4b9c-ba4c-1668689319d3">
+<img alt="Calendar Example" width=400 src="https://github.com/liturgical-app/calendar-api/assets/34093915/0c7a3250-c68f-4e68-9463-9f40e7a3e9f7">
 
 ## Explanation
 - ℹ️ Get Liturgical information for a given date ([see more](https://pypi.org/project/liturgical-calendar/))
