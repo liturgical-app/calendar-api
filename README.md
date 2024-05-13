@@ -17,3 +17,9 @@
 ## Run Locally
 - 🔧 `pip install -r src/app/requirements.txt`
 - 🚀 `make start`
+
+## Pull image
+
+```console
+docker pull ghcr.io/liturgical-app/calendar-api:latest
+```
