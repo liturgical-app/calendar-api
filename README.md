@@ -23,3 +23,7 @@
 ```console
 docker pull ghcr.io/liturgical-app/calendar-api:latest
 ```
+
+- Stable releases are built as image tags, e.g. `1.0.0`
+- The `latest` tag points to the latest stable release
+- The `edge` tag is built from the latest commit to `main`
