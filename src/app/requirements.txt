@@ -1,5 +1,5 @@
 Flask~=3.0.0
-Gunicorn~=22.0.0
+Gunicorn~=23.0.0
 aiohttp
 certifi
 gevent
