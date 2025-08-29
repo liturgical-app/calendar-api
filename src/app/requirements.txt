@@ -13,4 +13,4 @@ coverage-badge
 pytest-cov
 genbadge
 defusedxml
-liturgical-calendar==0.4.0
+liturgical-calendar==0.4.2
