@@ -1,6 +1,6 @@
 import logging
 from datetime import date
-from flask import Blueprint, jsonify
+from flask import Blueprint, jsonify, redirect
 from liturgical_calendar.liturgical import liturgical_calendar
 
 
@@ -19,6 +19,10 @@ def construct_blueprint(messages):
     def get_liturgical_info_today():
         """ Retrieve liturgical information for today's date """
         return get_liturgical_info(date.today())
+
+    @calendar.route('/')
+    def home():
+        return redirect("/today")
 
     # Blueprint return
     return calendar
