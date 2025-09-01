@@ -29,15 +29,15 @@ def create_app():
     # Initialise blueprint
     app.register_blueprint(calendar.construct_blueprint(messages))
 
+    # Set short date format when serializing
+    # https://github.com/liturgical-app/calendar-api/issues/27
+    app.json.default = lambda obj: obj.isoformat() if isinstance(obj, (date, time, datetime)) else None
+
     return app
 
 
 # Create Flask app
 app = create_app()
-
-# Set short date format when serializing
-# https://github.com/liturgical-app/calendar-api/issues/27
-app.json.default = lambda obj: obj.isoformat() if isinstance(obj, (date, time, datetime)) else None
 
 # Only use when running direct
 if __name__ == "__main__":
