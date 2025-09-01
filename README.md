@@ -16,7 +16,7 @@
 
 ## Run Locally
 - 🔧 `pip install -r src/app/requirements.txt`
-- 🚀 `make start`
+- 🚀 `gunicorn src.app.app:app`
 
 ## Pull image
 
