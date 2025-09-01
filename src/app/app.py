@@ -1,4 +1,5 @@
 import json
+from datetime import date, time, datetime
 from logging.config import dictConfig
 from flask import Flask, current_app
 from flask_cors import CORS
@@ -33,6 +34,10 @@ def create_app():
 
 # Create Flask app
 app = create_app()
+
+# Set short date format when serializing
+# https://github.com/liturgical-app/calendar-api/issues/27
+app.json.default = lambda obj: obj.isoformat() if isinstance(obj, (date, time, datetime)) else None
 
 # Only use when running direct
 if __name__ == "__main__":
