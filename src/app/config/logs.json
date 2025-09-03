@@ -12,7 +12,7 @@
     },
     "file": {
       "class": "logging.FileHandler",
-      "filename": "calendar-api.log",
+      "filename": "liturgical-api.log",
       "formatter": "default"
     }
   },

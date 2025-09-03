@@ -1,4 +1,4 @@
-[![main](https://github.com/liturgical-app/calendar-api/actions/workflows/main.yaml/badge.svg)](https://github.com/liturgical-app/calendar-api/actions/workflows/main.yaml)
+[![main](https://github.com/liturgical-app/liturgical-api/actions/workflows/main.yaml/badge.svg)](https://github.com/liturgical-app/liturgical-api/actions/workflows/main.yaml)
 <a><img src="./src/resources/coverage/coverage.svg"></a>
 
 # Calendar Api
@@ -8,7 +8,7 @@
 
 #### [api.liturgical.uk/\<yyyy-mm-dd>](https://api.liturgical.uk/2024-12-10)
 
-<img alt="Calendar Example" width=480 src="https://github.com/liturgical-app/calendar-api/assets/34093915/0c7a3250-c68f-4e68-9463-9f40e7a3e9f7">
+<img alt="Calendar Example" width=480 src="https://github.com/liturgical-app/liturgical-api/assets/34093915/0c7a3250-c68f-4e68-9463-9f40e7a3e9f7">
 
 ## Explanation
 - 🗓 Get Liturgical information for a given date
@@ -21,7 +21,7 @@
 ## Pull image
 
 ```console
-docker pull ghcr.io/liturgical-app/calendar-api:latest
+docker pull ghcr.io/liturgical-app/liturgical-api:latest
 ```
 
 - Stable releases are built as image tags, e.g. `1.0.0`

@@ -21,7 +21,7 @@ def create_app():
 
     # Initialise logger
     dictConfig(json.load(open(from_root("app", "config", "logs.json"))))
-    app.logger_name = "calendar-api"
+    app.logger_name = "liturgical-api"
 
     # Initialise messages
     messages = Messages(from_root("resources", "messages.properties"))
@@ -30,7 +30,7 @@ def create_app():
     app.register_blueprint(calendar.construct_blueprint(messages))
 
     # Set short date format when serializing
-    # https://github.com/liturgical-app/calendar-api/issues/27
+    # https://github.com/liturgical-app/liturgical-api/issues/27
     app.json.default = lambda obj: obj.isoformat() if isinstance(obj, (date, time, datetime)) else None
 
     return app
