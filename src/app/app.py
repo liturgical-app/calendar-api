@@ -2,6 +2,7 @@ import json
 from datetime import date, time, datetime
 from logging.config import dictConfig
 from flask import Flask, current_app
+from prometheus_flask_exporter import PrometheusMetrics
 from flask_cors import CORS
 from from_root import from_root
 from src.app.config.config import Config
@@ -28,6 +29,9 @@ def create_app():
 
     # Initialise blueprint
     app.register_blueprint(calendar.construct_blueprint(messages))
+
+    # Initialise metrics
+    metrics = PrometheusMetrics(app)
 
     # Set short date format when serializing
     # https://github.com/liturgical-app/liturgical-api/issues/27
