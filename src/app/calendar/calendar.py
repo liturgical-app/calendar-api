@@ -25,6 +25,7 @@ def construct_blueprint(messages):
         return redirect("/today")
 
     @calendar.route('/healthz', methods=['GET'])
+    @metrics.do_not_track()
     def health_check():
         return jsonify({'status': 'healthy'}), 200
 
