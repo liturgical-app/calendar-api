@@ -1,7 +1,7 @@
 import json
 from datetime import date, time, datetime
 from logging.config import dictConfig
-from flask import Flask, current_app
+from flask import Flask, current_app, jsonify
 from prometheus_flask_exporter import PrometheusMetrics
 from flask_cors import CORS
 from from_root import from_root
@@ -30,9 +30,6 @@ def create_app():
     # Initialise blueprint
     app.register_blueprint(calendar.construct_blueprint(messages))
 
-    # Initialise metrics
-    metrics = PrometheusMetrics(app)
-
     # Set short date format when serializing
     # https://github.com/liturgical-app/liturgical-api/issues/27
     app.json.default = lambda obj: obj.isoformat() if isinstance(obj, (date, time, datetime)) else None
@@ -42,6 +39,14 @@ def create_app():
 
 # Create Flask app
 app = create_app()
+
+# Initialise metrics
+metrics = PrometheusMetrics(app)
+
+@app.route('/healthz', methods=['GET'])
+@metrics.do_not_track()
+def health_check():
+    return jsonify({'status': 'healthy'}), 200
 
 # Only use when running direct
 if __name__ == "__main__":
